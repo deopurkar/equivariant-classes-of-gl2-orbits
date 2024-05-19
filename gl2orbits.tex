@@ -1283,10 +1283,11 @@ The function \(e_{\sigma}\) is called the \emph{equivariant multiplicity} associ
 
  Let \(\sigma \subset M_{\R}\) be the closed convex cone spanned by \(\{\chi_i \mid w_i \neq 0\}\).
  Let \(\Orb(w) \subset W\) be the closure of the \(T\)-orbit of \(w\) and \([\Orb(w)]\) its fundamental class in \(A_{T}(W) = A_{T}\).
+ Let \(\Gamma \subset T\) be the stabiliser of \(w\), and assume that it is finite.
  \begin{theorem}\label{thm:torus}
    In the setup above, if \(\sigma\) contains a line, then \([\Orb(w)] = 0\).
    Otherwise,
-   \[ [\Orb(w)] = e_{\sigma} \cdot c_n(W).\]
+   \[ |\Gamma| \cdot [\Orb(w)] = e_{\sigma} \cdot c_n(W).\]
  \end{theorem}
  \begin{proof}
    If \(\sigma\) contains a line, then \(0 \in W\) is not in \(\Orb(w)\).
@@ -1296,8 +1297,8 @@ The function \(e_{\sigma}\) is called the \emph{equivariant multiplicity} associ
    Assume that \(\sigma\) contains no line, that is, it is pointed.
    Let \(X\) be the affine toric variety
    \[ X = \spec \k[M \cap \sigma].\]
-   It is easy to check that the map \(T \to W\) that sends \(t \in T\) to \(t \cdot w\) extends to a proper morphism \(i \colon X \to W\).
-   Then \([\Orb(w)] = i_{*}[X]\).
+   It is easy to check that the map \(T \to W\) that sends \(t \in T\) to \(t \cdot w\) extends to a proper morphism \(i \colon X \to W\), generically finite of degree \(|\Gamma|\).
+   Then \(|\Gamma| \cdot [\Orb(w)] = i_{*}[X]\).
 
    To compute the push-forward, we use localisation \cite[\S~4.2 Corollary]{bri:97}.
    Let \(0_X \in X\) and \(0_W \in W\) be the origins.
